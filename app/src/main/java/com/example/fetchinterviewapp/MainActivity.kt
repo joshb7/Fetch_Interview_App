@@ -60,12 +60,12 @@ class MainActivity : AppCompatActivity() {
                 Log.d("test",sortedData[1].toString())
                 handler.post {//post upon async task completion
 
-                    // Posts each item in the RecylerView component via the Custom Adapter
+                    // Posts each item in the RecyclerView component via the Custom Adapter
                     val customAdapter = CustomAdapter(sortedData)
                     val recycler: RecyclerView = findViewById(R.id.recycler)
                     recycler.layoutManager = LinearLayoutManager(this)
                     recycler.adapter = customAdapter
-                    findViewById<ConstraintLayout>(R.id.loading).visibility = View.GONE//loading widget dissappears on data load
+                    findViewById<ConstraintLayout>(R.id.loading).visibility = View.GONE//loading widget disappears on data load
                 }
             }
         // If any exceptions/errors are thrown, catch here and show a Toast message to user

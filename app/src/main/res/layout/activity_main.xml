@@ -23,8 +23,10 @@
             android:elevation="10sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
 
         <ProgressBar
             android:id="@+id/progressBar"
@@ -47,7 +49,7 @@
             android:elevation="10sp"
             android:shadowColor="@color/black"
             android:shadowRadius="2.5"
-            android:text="Loading... Please Wait."
+            android:text="@string/loading"
             android:textColor="@color/white"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -64,7 +66,7 @@
         android:layout_margin="15sp"
         android:elevation="10sp"
         android:padding="10sp"
-        android:text="Fetch Data Interview App"
+        android:text="@string/title"
         android:textColor="#f8a619"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -84,7 +86,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="10dp"
-            android:text="List IDs:"
+            android:text="@string/list_ids"
             android:textAlignment="center" />
 
         <TextView
@@ -93,7 +95,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="10dp"
-            android:text="IDs:"
+            android:text="@string/ids"
             android:textAlignment="center" />
 
         <TextView
@@ -102,7 +104,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="5dp"
-            android:text="Names:"
+            android:text="@string/names"
             android:textAlignment="center" />
     </LinearLayout>
 
