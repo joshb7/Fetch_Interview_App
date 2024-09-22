@@ -12,7 +12,7 @@ This is an Android written in Kotlin that fetches json data from [the provided u
 
 This app was developed in Kotlin version 2.0.20, targeting the Android 34 SDK.
 
-A dependency that has been added is the Kotlinx Serialization library, which can be added in plugins and dependencies in the app level build.gradle.kts:
+A dependency in use is the Kotlinx Serialization library, which has been added in plugins and dependencies in the app level build.gradle.kts:
 ```
 plugins{
     kotlin("plugin.serialization") version "2.0.20"
@@ -23,7 +23,7 @@ dependencies {
     implementation(libs.kotlinx.serialization.json)
 }
 ```
-And a kotlin version target can be added in the project level build.gradle.kts:
+And a kotlin version target has been added in the project level build.gradle.kts:
 ```
 plugins{
     kotlin("jvm") version "2.0.20" apply false}
